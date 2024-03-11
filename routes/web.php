@@ -27,3 +27,6 @@ Route::get('task/{id}', [TaskController::class, 'index'])->name('task');
 Route::fallback(function () {
     return view('Layouts.Error404');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
