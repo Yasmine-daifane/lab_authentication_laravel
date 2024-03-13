@@ -1,8 +1,10 @@
 <?php
 
+use App\Repositories\TaskRepository;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Repositories\ProjectRepository;
-use App\Repositories\TaskRepository;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\ProjectController;
 
