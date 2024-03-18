@@ -1,9 +1,7 @@
 <?php
 
-use App\Repositories\TaskRepository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Repositories\ProjectRepository;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\ProjectController;
@@ -28,7 +26,7 @@ Route::resource('projects', ProjectController::class)->middleware('verified');
 
 Route::get('task/{id}', [TaskController::class, 'index'])->name('task');
 Route::fallback(function () {
-    return view('Layouts.Error404');
+    return view('layouts.Error404');
 });
 
 Auth::routes(['verify' => true]);

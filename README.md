@@ -5,6 +5,8 @@
 composer require laravel/ui
 php artisan ui bootstrap --auth
 ```
+
+- **infyom**
 ```bash
 composer require infyomlabs/laravel-ui-adminlte
 php artisan ui adminlte --auth

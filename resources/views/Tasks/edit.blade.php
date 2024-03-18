@@ -1,4 +1,4 @@
-@extends('Layouts.Layout')
+@extends('layouts.app')
 @section('content')
     <div class="content-header">
     </div>
@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
 
-                    <div class="card card-primary">
+                    <div class="card card-info">
                         <div class="card-header">
                             <h3 class="card-title">Edit Tâche </h3>
                         </div>
@@ -46,7 +46,7 @@
 
                             <div class="card-footer">
                                 <a href="{{ route('tasks.index') }}" class="btn btn-default">Annuler</a>
-                                <button type="submit" class="btn btn-primary">update</button>
+                                <button type="submit" class="btn btn-info">update</button>
                             </div>
                         </form>
                     </div>

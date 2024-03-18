@@ -1,12 +1,7 @@
-@extends('Layouts.Layout')
+@extends('layouts.app')
+
 @section('content')
-    <div class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>Bienvenue à la lab authentication laravel</h1>
-                </div>
-            </div>
-        </div>
+    <div class="container-fluid">
+        <h1 class="text-black-50">Bienvenue à la lab authentication laravel</h1>
     </div>
 @endsection

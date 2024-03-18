@@ -1,2 +1,2 @@
 import './bootstrap';
-import 'admin-lte/dist/js/adminlte';
+import 'admin-lte';

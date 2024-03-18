@@ -1,4 +1,4 @@
-@extends('Layouts.Layout')
+@extends('layouts.app')
 @section('content')
     <div class="content-header">
         <div class="container-fluid">
@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="float-sm-right">
-                        <a href="{{ route('tasks.create') }}" class="btn btn btn-primary">Ajouter tâche</a>
+                        <a href="{{ route('tasks.create') }}" class="btn btn btn-info">Ajouter tâche</a>
                     </div>
                 </div>
             </div>
