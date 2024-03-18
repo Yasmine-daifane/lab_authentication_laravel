@@ -23,12 +23,13 @@ Route::get('/', function () {
     return view('Home');
 })->name('index');
 
-Route::resource('tasks', TaskController::class);
-Route::resource('projects', ProjectController::class);
+Route::resource('tasks', TaskController::class)->middleware('verified');
+Route::resource('projects', ProjectController::class)->middleware('verified');
+
 Route::get('task/{id}', [TaskController::class, 'index'])->name('task');
 Route::fallback(function () {
     return view('Layouts.Error404');
 });
-Auth::routes();
 
+Auth::routes(['verify' => true]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
