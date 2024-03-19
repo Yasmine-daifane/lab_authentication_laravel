@@ -25,7 +25,6 @@ MAIL_PASSWORD=**************
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS="hello@example.com"
 MAIL_FROM_NAME="${APP_NAME}"
-
 ```
 
 ## Logout
