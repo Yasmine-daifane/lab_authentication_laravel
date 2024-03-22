@@ -20,4 +20,4 @@ Route::fallback(function () {
 });
 
 Auth::routes(['verify' => true]);
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
